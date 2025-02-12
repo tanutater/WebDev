@@ -1,3 +1,4 @@
 {
-  "livePreview.hostIP": "192.168.156.129"
+  "livePreview.hostIP": "192.168.156.129",
+  "livePreview.defaultPreviewPath": "/audio_vedio_media_element/index.html"
 }
