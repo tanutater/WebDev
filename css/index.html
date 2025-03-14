@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INTRODUCTION TO CSS  </title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<style>
+  /* class selector */
+  .red{
+    background-color: red;
+  }
+  /* id selector */
+  #green{
+    background-color: green;
+  }
+  /* clild selector for direct child */
+  div > p{
+    color: white;
+    background-color: brown;
+  }
+  /* descendant selector */
+  div p{
+    color: black;
+    background-color: yellow;
+  }
+  /* universal selector */
+  *{
+    margin: 0;
+    padding: 20px;
+  }
+  /* pseudo selector  */
+  a:visited{  /*for visisted sites i.e. after visiting */
+    color: plum;
+  }
+  a:link{ /*non-visited sites */
+    color: blueviolet;
+  }
+  a:active{ /* jab click kar rahe ho tab*/
+    background-color: lightgreen;
+  }
+  a:hover{
+    background-color: lightsalmon;
+  }
+  p:first-child{
+    background-color: aqua;
+  }
+
+</style>
+<body>
+  <div class="one">
+    <p>i am first </p> 
+    <p>i am second </p> 
+  </div>
+  <div>
+    <a href="https://www.google.com">Go to google </a>
+    <a href="https://www.google2.com">Go to google </a>
+  </div>
+  <h1>Three ways to style css</h1>
+  <div id="green">
+    <ol>
+      <li>Inline css</li>
+      <li>Internal css</li>
+      <li>External css</li>
+    </ol>
+  </div>
+  <div>
+    hey i am Tanu  and today i am in CSS 
+    <p>I am a para inside div</p>
+  </div>
+  <span>
+    HII
+  </span>
+  <div class="red">
+    i am a div
+    <article>
+      <p>i am para -> not inside div but inside article so descendant property</p>
+    </article>
+  </div>
+</body>
+</html>
