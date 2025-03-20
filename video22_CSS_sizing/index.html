@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Sizing </title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    html{ /* root element */
+      font-size: 12px;
+    }
+    .box{
+      box-sizing: border-box;/*horizontal scroll is removed */
+      border: 2px solid black;
+      /* width:2048px; */
+      width: 80vw; /*makes it responsive vw->view port */
+      margin: auto; /*centers the div only works for block element not for inline */
+      height: 10vh;/* 10% of the height of view port */
+      background-color: aqua;
+    }
+    .container{
+      box-sizing: border-box;/*horizontal scroll is removed */
+      border: 2px solid black;
+      /* width:2048px; */
+      width: 80vw; /*makes it responsive vw->view port */
+      margin:23px auto; /*centers the div only works for block element not for inline */
+      height: 80vh; /* 80% of the height of view port */
+      min-height: 80vh;
+      font-size: 18px;
+      background-color: aqua;
+    }
+    .container p{
+      font-size: 1.5em; /*inherit karke para ko jitna font milne wala tha uska 1.5(jo em me likha hai ) times zyada milega */
+      font-size: 2rem; /*root(html) element ke font size 2(jo rem me ho) times ho jaye */
+    }
+    .mycont{
+      /* background-color: red; */
+      box-sizing: border-box;
+      margin: 23px auto;
+      border:2px solid black  ;
+      color: blue;
+      font-size: 22px;
+      /* width: 100vmin; */
+      width: 80vw;
+    }
+  </style>  
+</head>
+<body>
+  <div class="box">
+    i am a box 
+  </div>
+  <div class="container">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est corporis amet tempore sit porro maxime blanditiis, doloremque, deserunt at dolor molestiae. Error, et itaque accusantium aliquid in culpa enim numquam obcaecati earum qui nihil quisquam reprehenderit, alias magni quae placeat fuga reiciendis at dicta assumenda eligendi repudiandae. Ut quam amet minima cum voluptate sapiente dolores eaque!</p>
+  </div>
+  <div class="mycont">
+    i am another cont
+  </div>
+</body>
+</html>
