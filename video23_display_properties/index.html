@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display property in CSS</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .box{
+      border: 2px solid black;
+      display: inline-block;
+      width: 344px;
+      padding: 45px;
+      margin: 34px;
+    }
+    .box1{
+      /* display: none; */ /* removes the box as well as the space*/
+      /* visibility: hidden ;*/ /* removes the box but keeps the space */
+      display: flex;
+      /* display : inline-flex  */ /*ek hi line me aa jata hai */
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="box box1">
+    I am a div block level element  
+  </div>
+  <div class="box ">
+    i am another div 
+  </div>
+  <span> i am a span </span>
+  <span>inline element</span>
+</body>
+</html>
