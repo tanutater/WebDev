@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Overflow</title>
+  <style>
+    .box{
+      width: 30vw;
+      height: 10vh;
+      border: 2px solid navy;
+      /* overflow: scroll; *//*gives scroll bar even if overflow na ho */
+      overflow: auto; /* agar overflow kare to scroll bar else not  */
+      /* white-space:nowrap; /*horizontally space legi niche text nahi jayega */
+      /* text-overflow: ellipsis;*//* dots aa jate hai for example tanu..... */ 
+      overflow-x: hidden;
+      overflow-y: scroll;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    i am Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, tenetur odit. Eveniet, earum doloribus blanditiis ab impedit quasi vel quaerat deleniti, provident in consequatur quidem ipsam excepturi, dolor consequuntur accusantium. Dolores velit obcaecati provident sint officia atque amet mollitia, facere iure, dolorem itaque est nulla!
+  </div>
+</body>
+</html>
