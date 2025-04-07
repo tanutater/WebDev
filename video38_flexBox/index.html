@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+  <style>
+    .container{
+      border: 2px solid red;
+      display: flex;
+      height: 80vh;
+      justify-content: center;
+      align-items: center;
+      /* align-content: center; jab multible lines me content ho jab items wrap kare overflow karke niche dusri line me aa jayege */
+      flex-wrap: wrap;
+      /* flex-direction: column; */
+      /* flex-direction: column-reverse; */
+      /* flex-direction: row-reverse; */
+      /* flex-direction: row; */
+      flex-flow: row wrap;
+      gap: 30px;
+      /* row-gap: 10px; */
+      /* column-gap: 50px; */
+    }
+    .item{
+      /* flex-grow: 1; */
+      
+      height: 32px;
+      width: 32px;
+      border: 2px solid black;
+      /* margin: 4px; */
+      background-color: violet;
+
+    }
+    .order-1{
+      order: 1;
+    }
+    .order-2{
+      order: 3;
+    }
+    .order-3{    /*jitna zyada order utna badme aayega wo element default order 0*/
+      order: 3;
+    }
+    .item1{
+      height: 32px;
+      width: 32px;
+      border: 2px solid black;
+      /* margin: 4px; */
+      background-color: violet;
+      flex-shrink: 2;
+      /* flex-grow: 2; */
+      align-self: flex-end;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="item1"></div>
+      <div class="item order-1"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <!-- <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div> -->
+
+    </div>
+  </main>
+</body>
+</html>
