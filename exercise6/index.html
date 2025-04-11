@@ -5,25 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>exercise 6 nav bar designing</title>
     <style>
-      header {
-        background-color: pink;
-        display: flex;
-        height: 123px;
+      .logo{
+        /* background-color: blue; */
       }
-      nav {
+      .logo img{
+        width: 164px;
+      }
+      nav{
         display: flex;
-        justify-content: space-between; /* pushes items to ends */
+        justify-content: space-around;
         align-items: center;
-        padding: 0 20px;
-        width: 100%; /* important to span the header */
+      }
+      .right ul{
+        display: flex;
+        gap: 34px;
+      }
+      .right ul li{
+        list-style: none;
+        cursor: pointer;
       }
     </style>
   </head>
   <body>
     <header>
       <nav>
-        <p>UltraEdi</p>
-        <p class="p2">search</p>
+        <div class="logo">
+          <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp" alt="">
+        </div>
+        <div class="right">
+          <ul>
+            <li>Products</li>
+            <li>Prcing</li>
+            <li>Resouces</li>
+            <li>About us</li>
+            <li><img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png" alt=""></li>
+          </ul>
+        </div>
       </nav>
     </header>
   </body>
