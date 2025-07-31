@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation</title>
+  <style>
+    .container{
+      background-color: rgb(9,106,106);
+      height: 80vh;
+      width: 30vw;
+    }
+    .box{
+      width: 34px;
+      height: 45px;
+      background-color: aqua;
+      /* animation:tanuKaAnimation;
+      animation-duration: 3s ;
+      animation-iteration-count: 3;
+      animation-timing-function: ease-out;
+      animation-delay: 1s;
+      animation-direction: reverse;
+      animation-play-state: paused; */
+      /* animation shorthand */
+      /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+      /* animation: tanuKaAnimation 3s ease-in-out 2s  forwards; */
+      animation: tanuKaAnimation 2s ease-in-out 3s 1, tanu2 3s ease-in-out 3s 1;
+    }
+    @keyframes tanuKaAnimation{
+      from{
+        background-color: red;
+      }
+      to{
+        background-color: yellow;
+        transform: translateX(1000px);
+        
+      }
+    }
+    @keyframes tanu2 {
+      0%{
+        transform: rotate(100deg);
+      }
+      20%{
+        transform: rotate(200deg);
+      }
+      50%{
+        transform: rotate(220deg);
+      }
+      80%{
+        transform: rotate(300deg);
+      }
+      100%{
+        transform: rotate(310deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">BOX</div>
+  </div>
+</body>
+</html>
